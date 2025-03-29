@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6fca2fe7-7db6-33b4-13d1-0021b16ac377" name="Militarum Tempestus: Codex (2014)" revision="2010" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6fca2fe7-7db6-33b4-13d1-0021b16ac377" name="Militarum Tempestus: Codex (2014)" revision="2010" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6fca2fe7--pubN66321" name="Codex: Militarum Tempestus"/>
     <publication id="6fca2fe7--pubN73601" name="Start Collecting! Militarum Tempestus"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" revision="2038" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" revision="2038" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="818a0a0f--pubN65537" name="Adepta Sororitas: Codex (2013)"/>
     <publication id="818a0a0f--pubN68426" name="Codex: Adepta Sororitas"/>

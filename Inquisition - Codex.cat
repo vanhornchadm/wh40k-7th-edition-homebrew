@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6e6c7c90-fc3a-84f7-48fc-47e305b2de3b" name="Inquisition: Codex (2013)" revision="2037" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6e6c7c90-fc3a-84f7-48fc-47e305b2de3b" name="Inquisition: Codex (2013)" revision="2037" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6e6c7c90--pubN67430" name="Crusade of Fire"/>
     <publication id="6e6c7c90--pubN69307" name="IA5 Second Edition"/>

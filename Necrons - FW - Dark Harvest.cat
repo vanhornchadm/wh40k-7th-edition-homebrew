@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9880da7d-5991-2d0e-061f-79b21ac42eb2" name="Necrons: FW IA12 - Dark Harvest (2014)" revision="2002" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9880da7d-5991-2d0e-061f-79b21ac42eb2" name="Necrons: FW IA12 - Dark Harvest (2014)" revision="2002" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="9880da7d--pubN65946" name="Codex: Necrons"/>
     <publication id="9880da7d--pubN66151" name="IA: Volume 12"/>

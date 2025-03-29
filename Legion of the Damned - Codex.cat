@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a6324ae-733e-a451-ead5-42d2997cf0ef" name="Legion of the Damned: Codex (2014)" revision="2006" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a6324ae-733e-a451-ead5-42d2997cf0ef" name="Legion of the Damned: Codex (2014)" revision="2006" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="2a6324ae--pubN65771" name="Codex: Legion of the Damned"/>
     <publication id="2a6324ae--pubN72521" name="Warhammer 40k rulebook"/>
