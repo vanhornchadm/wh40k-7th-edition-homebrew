@@ -59,7 +59,6 @@
         <selectionEntry type="upgrade" import="true" name="Balemace Tail" hidden="false" id="3d10-9cd9-0a4d-b262">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73e2-1e30-1911-7616" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46dc-6951-ecee-a1c5" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Balemace Tail" id="936e-7570-02b5-92c9" hidden="false" type="profile" targetId="c461-4e81-6c10-cc77"/>
@@ -67,6 +66,17 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="e367-85f3-c923-a44a" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="182a-d509-b57d-007b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dirge Caster" id="65f8-aa58-d48b-e1a0" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
