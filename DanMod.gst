@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="DanMod" revision="2" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" name="DanMod" revision="2" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e1ebd931--pubN66380" name="BRB"/>
     <publication id="e1ebd931--pubN67328" name="Kill Team Dataslate"/>
