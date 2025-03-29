@@ -19,16 +19,16 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="f3fd-13bf-afe6-6d8f" hidden="false" collective="false" import="true" targetId="8077-af66-ff34-45f5" type="selectionEntry" name="Renegade Knight">
+    <entryLink id="f3fd-13bf-afe6-6d8f" hidden="false" collective="false" import="true" targetId="8077-af66-ff34-45f5" type="selectionEntry" name="Renegade Questoris Knight">
       <categoryLinks>
         <categoryLink id="f3fd-13bf-afe6-6d8f-c888f08a-6cea-4a01-8126-d374a9231554" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="8077-af66-ff34-45f5" name="Knight Desecrator" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Questoris Knight" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b8a6-aa9e-b268-fd4b" name="Knight Desecrator" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker">
+        <profile id="b8a6-aa9e-b268-fd4b" name="Renegade Questoris Knight" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
@@ -56,38 +56,21 @@
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Balemace Tail" hidden="false" id="3d10-9cd9-0a4d-b262">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73e2-1e30-1911-7616" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46dc-6951-ecee-a1c5" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Balemace Tail" id="936e-7570-02b5-92c9" hidden="false" type="profile" targetId="c461-4e81-6c10-cc77"/>
+            <infoLink name="Tail Swipe" id="0a4d-e345-b085-cd73" hidden="false" type="rule" targetId="1a2a-61e3-c354-8b26"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7c1f-fb85-4e35-0d81" name="Heavy Stubber or Meltagun" hidden="false" collective="false" import="true" defaultSelectionEntryId="0768-eaed-01af-9d03">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0768-eaed-01af-9d03" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="76bd-5ba8-7640-55a8" hidden="false" targetId="0031-0314-5b36-a220" type="profile" name="Heavy Stubber"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7481-ed5c-48cf-96ef" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6b49-67af-fddc-d8c8" hidden="false" targetId="ec4c-1132-ddaf-db8e" type="profile" name="Meltagun"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Daemon Knight upgrade" id="5a01-11e0-a303-f971" hidden="false" collective="false" import="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8243-8ec9-0e09-350e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -152,6 +135,7 @@
         <entryLink id="67dc-1af1-57a1-fb0d" hidden="false" collective="false" import="true" targetId="ef23-c4ad-8a48-a817" type="selectionEntryGroup" name="Carapace Weapons"/>
         <entryLink id="5f6e-55a5-5732-ba7b" hidden="false" collective="false" import="true" targetId="e7d3-3542-4c38-9766" type="selectionEntryGroup" name="Reaper Chainsword and Alternatives"/>
         <entryLink id="2d1e-d5d1-6bf7-4a32" hidden="false" collective="false" import="true" targetId="06e7-7163-f288-0913" type="selectionEntryGroup" name="Thunderstrike Gauntlet and Alternatives"/>
+        <entryLink import="true" name="Hull Weapons" hidden="false" id="e2c4-7c1a-e251-db70" type="selectionEntryGroup" targetId="ab4b-b220-3492-cf21"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="325"/>
@@ -571,6 +555,7 @@
           </constraints>
           <infoLinks>
             <infoLink id="52b1-c1be-b0bd-fc21" hidden="false" targetId="a6e2-245b-5c9c-0beb" type="profile" name="Foe-reaper Chainsword"/>
+            <infoLink name="Foe-reaper" id="3648-0ff9-b4fc-d66b" hidden="false" type="rule" targetId="b84e-247f-10b8-04b0"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5"/>
@@ -635,6 +620,47 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Hull Weapons" id="ab4b-b220-3492-cf21" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80de-96b3-e7c3-680d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e2d-81d3-596e-58b9" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="9a77-543a-ff51-62ac" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c46e-7acc-cf58-7c3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Stubber" id="c626-4bd3-547a-f4c4" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="05a8-fe13-78cd-2cc4" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a3ca-6c3d-f52d-048d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Meltagun" id="8ab6-9d7e-816f-7006" hidden="false" targetId="ec4c-1132-ddaf-db8e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="41b5-9afc-9a51-6ad4" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="476b-b748-1a45-9b07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Multi-laser" id="a485-1f29-4582-199d" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="d5c4-ab2d-8af6-3b43" name="Fallen Household" hidden="false">
@@ -651,6 +677,9 @@
     </rule>
     <rule id="529a-5c03-7cb3-bad2" name="Colossal" hidden="false">
       <description>A model fighting with this weapon Piles In and fights at Initiative step 1.</description>
+    </rule>
+    <rule name="Tail Swipe" id="1a2a-61e3-c354-8b26" hidden="false">
+      <description>This weapon makes a single bonus attack at Initiative step 1 in addition to the model’s normal attacks (even with Unwieldy). This does not benefit from Smash or any other special melee weapons.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -742,6 +771,14 @@
     <profile id="87d2-daa6-ee28-d634" name="Dirge Caster" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">An enemy model within 6&quot; of a vehicle with this special rule cannot fire Overwatch.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Balemace Tail" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="c461-4e81-6c10-cc77">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Concussive, Tail Swipe</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
