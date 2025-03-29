@@ -26,9 +26,9 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Questoris Knight" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Knight" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b8a6-aa9e-b268-fd4b" name="Renegade Questoris Knight" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker">
+        <profile id="b8a6-aa9e-b268-fd4b" name="Renegade Knight" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
@@ -151,6 +151,9 @@
       <costs>
         <cost name="pts" typeId="points" value="325"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="df84-48f1-8705-e1ef" primary="false" name="Lord of War"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="4cc3-1630-e1c3-2ab6" name="[FW] Chaos Knight Errant" hidden="true" collective="false" import="true" type="model">
       <profiles>
@@ -480,80 +483,100 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden"/>
-        <modifier type="set" value="true" field="hidden"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Armiger Knight" hidden="false" id="e2e6-21c6-0a69-a35e">
+    <selectionEntry type="upgrade" import="true" name="Renegade Knight Armiger" hidden="false" id="e2e6-21c6-0a69-a35e">
       <profiles>
-        <profile name="Renegade Armiger Knight" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c779-4ec8-1e83-9595">
+        <profile name="Renegade Knight Armiger" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c779-4ec8-1e83-9595">
           <characteristics>
-            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e"/>
-            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5"/>
-            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b"/>
-            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f"/>
-            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e"/>
-            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2"/>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592"/>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7"/>
-            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">7</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">11</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Walker)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="150"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Dominus Knight" hidden="false" id="b95d-d337-407e-48cc">
+    <selectionEntry type="upgrade" import="true" name="Renegade Knight Dominus" hidden="false" id="b95d-d337-407e-48cc">
       <profiles>
-        <profile name="Renegade Dominus Knight" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="a890-053c-51c1-f6f3">
+        <profile name="Renegade Knight Dominus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="a890-053c-51c1-f6f3">
           <characteristics>
-            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e"/>
-            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5"/>
-            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b"/>
-            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f"/>
-            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e"/>
-            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2"/>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592"/>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7"/>
-            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">10</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">13</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">12</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">7</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Super-Heavy Walker)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="2e23-65d8-1748-ef24" primary="false" name="Lord of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="420"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Cerastus Knight" hidden="false" id="b99b-715e-0e05-c599">
+    <selectionEntry type="upgrade" import="true" name="Renegade Knight Cerastus" hidden="false" id="b99b-715e-0e05-c599">
       <profiles>
-        <profile name="Renegade Cerastus Knight" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="104d-eb56-556d-53c3">
+        <profile name="Renegade Knight Cerastus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="104d-eb56-556d-53c3">
           <characteristics>
-            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e"/>
-            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5"/>
-            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b"/>
-            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f"/>
-            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e"/>
-            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2"/>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592"/>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7"/>
-            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">10</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">12</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">6</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Super-Heavy Walker)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="2466-d8d2-5960-74aa" primary="false" name="Lord of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="380"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Acastus Knight" hidden="false" id="4809-6836-ddbf-b899">
+    <selectionEntry type="upgrade" import="true" name="Renegade Knight Acastus" hidden="false" id="4809-6836-ddbf-b899">
       <profiles>
-        <profile name="Renegade Acastus Knight" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c58e-1493-04a0-a714">
+        <profile name="Renegade Knight Acastus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c58e-1493-04a0-a714">
           <characteristics>
-            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e"/>
-            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5"/>
-            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b"/>
-            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f"/>
-            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e"/>
-            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2"/>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592"/>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7"/>
-            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">10</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">11</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">8</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Super-Heavy Walker)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="e22c-de8b-4823-1093" primary="false" name="Lord of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="540"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
