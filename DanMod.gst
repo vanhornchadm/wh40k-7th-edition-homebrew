@@ -692,9 +692,9 @@
         <categoryLink name="Legendary Unit" hidden="false" id="aca5-9f17-064d-9ac2" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" type="categoryEntry"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="true" field="hidden" scope="force">
           <conditions>
-            <condition type="atLeast" value="1" field="forces" scope="roster" childId="any" shared="true"/>
+            <condition type="atLeast" value="1" field="forces" scope="force" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
