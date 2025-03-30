@@ -694,7 +694,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden" scope="force">
           <conditions>
-            <condition type="atLeast" value="1" field="forces" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="forces" scope="ca4c-9142-d515-0745" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
