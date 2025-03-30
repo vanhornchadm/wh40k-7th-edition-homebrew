@@ -1,4 +1,20 @@
-Warhammer 40,000 7th Edition
+DanMod for Warhammer 40,000 7th Edition
+============================
+
+## Changes Overview ##
+
+### Renegades & Heretics ###
+* Remove restrictions for Ordinance Tyrant and Shock Legion Taskmaster
+
+### Chaos Renegade Knights ###
+* Add new wargear to Renegade Knight
+* Add new units
+  * Renegade Knight Acastus
+  * Renegade Knight Armiger
+  * Renegade Knight Cerastus
+  * Renegade Knight Dominus
+
+Warhammer 40,000 7th Edition (OLD)
 ============================
 
 [![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) <- talk to us!
