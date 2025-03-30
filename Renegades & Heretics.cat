@@ -158,6 +158,7 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -172,11 +173,6 @@
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
-            <modifier type="increment" value="1" field="6745-7e9a-95c5-aa3a">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="df19-a195-1908-b925" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Fast Attack" hidden="false" id="c167-14eb-82a3-13ba" targetId="c274d0b0-5866-44bc-9810-91c136ae7438">
@@ -187,6 +183,7 @@
             <modifier type="increment" value="1" field="162f-6e6d-174c-0ec4">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -199,6 +196,7 @@
             <modifier type="increment" value="1" field="59f8-bb16-7cd2-7972">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
