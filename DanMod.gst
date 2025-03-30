@@ -691,6 +691,13 @@
         <categoryLink name="Lord of War" hidden="false" id="1715-03a0-8f1f-c615" targetId="c888f08a-6cea-4a01-8126-d374a9231554" type="categoryEntry"/>
         <categoryLink name="Legendary Unit" hidden="false" id="aca5-9f17-064d-9ac2" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" type="categoryEntry"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <entryLinks>
