@@ -140,7 +140,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Battlegroup Detachment (Infantry Platoon Fix)" id="8a5c-daf5-9690-7291" hidden="false">
+    <forceEntry name="Battlegroup Detachment" id="8a5c-daf5-9690-7291" hidden="false">
       <categoryLinks>
         <categoryLink name="No Force Org Slot" hidden="false" id="40c6-513c-3df6-bb1f" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
         <categoryLink name="HQ" hidden="false" id="9bc4-7916-3d16-74d2" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
