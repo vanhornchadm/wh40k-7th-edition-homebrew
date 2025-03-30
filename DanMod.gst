@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" name="DanMod" revision="2" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" name="DanMod" revision="3" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e1ebd931--pubN66380" name="BRB"/>
     <publication id="e1ebd931--pubN67328" name="Kill Team Dataslate"/>
@@ -325,7 +325,7 @@
         </categoryLink>
         <categoryLink id="f1c4-09e2-1971-7362-c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c822-dbe6-5747-4731" type="max"/>
+            <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c822-dbe6-5747-4731" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -627,6 +627,71 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
         </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Battlegroup Detachment" id="44f2-e9c6-f689-2057" hidden="false">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" hidden="false" id="fdd0-bf14-fefe-f3c8" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+        <categoryLink name="HQ" hidden="false" id="2d91-00cd-6b9d-0413" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2a58-50d9-48cc-2ca9" includeChildSelections="true"/>
+            <constraint type="max" value="25" field="limit::points" scope="roster" shared="false" id="2f08-05be-fa3a-68c2" percentValue="true" includeChildForces="true" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="1332-85d4-c22a-7a59" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="155c-81eb-67cc-f9fd" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="155c-81eb-67cc-f9fd">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="cfe4-d375-e09a-687e" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="00eb-e548-aedc-7ee9" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="00eb-e548-aedc-7ee9">
+              <conditions>
+                <condition type="atLeast" value="1" field="points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="da15-61f1-57d6-16b6" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9d07-8001-912a-376b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="9d07-8001-912a-376b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="af5d-f757-0bf5-1058" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ec6-e2ff-f286-0f64"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="0ec6-e2ff-f286-0f64">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fortification" hidden="false" id="8311-ff68-5163-7d4f" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="categoryEntry"/>
+        <categoryLink name="Lord of War" hidden="false" id="1715-03a0-8f1f-c615" targetId="c888f08a-6cea-4a01-8126-d374a9231554" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
