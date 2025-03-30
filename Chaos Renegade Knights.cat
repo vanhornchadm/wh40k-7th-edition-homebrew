@@ -26,18 +26,22 @@
     </entryLink>
     <entryLink import="true" name="Renegade Knight Acastus" hidden="false" id="18ec-b20b-6e48-32c8" type="selectionEntry" targetId="4809-6836-ddbf-b899">
       <categoryLinks>
-        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="d68f-aeae-81a7-d39a" primary="false" name="Lord of War"/>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="d68f-aeae-81a7-d39a" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Renegade Knight Armiger" hidden="false" id="4ab2-4bfa-7960-17d9" type="selectionEntry" targetId="e2e6-21c6-0a69-a35e"/>
+    <entryLink import="true" name="Renegade Knight Armiger" hidden="false" id="4ab2-4bfa-7960-17d9" type="selectionEntry" targetId="e2e6-21c6-0a69-a35e">
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="735a-26fc-5f31-80fa" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Renegade Knight Cerastus" hidden="false" id="d434-784e-895a-3858" type="selectionEntry" targetId="b99b-715e-0e05-c599">
       <categoryLinks>
-        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="1533-1ee0-ef1b-f698" primary="false" name="Lord of War"/>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="1533-1ee0-ef1b-f698" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Renegade Knight Dominus" hidden="false" id="b7a1-427b-2195-bad8" type="selectionEntry" targetId="b95d-d337-407e-48cc">
       <categoryLinks>
-        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="d2ce-f9d0-69ad-28d2" primary="false" name="Lord of War"/>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="d2ce-f9d0-69ad-28d2" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
