@@ -502,7 +502,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Renegade Knight Armiger Squadron" hidden="false" id="e2e6-21c6-0a69-a35e">
       <costs>
-        <cost name="pts" typeId="points" value="150"/>
+        <cost name="pts" typeId="points" value="25"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Renegade Knight Armiger" hidden="false" id="555e-0ee9-1fb1-0ccc">
@@ -548,6 +548,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f683-b83a-3105-3fc8" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d8cf-032a-2d08-bdb2" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="150"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
