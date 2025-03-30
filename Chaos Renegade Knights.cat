@@ -849,6 +849,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Volkite Combustor" id="deb5-3748-609b-f159" hidden="false" type="profile" targetId="18a6-caf0-212d-4821"/>
+            <infoLink name="Deflagrate" id="077d-d2ad-2bcf-9571" hidden="false" type="rule" targetId="9065-911e-d591-1703"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8838-75b1-6afa-8cfa" includeChildSelections="false"/>
@@ -922,6 +923,9 @@
     </rule>
     <rule name="Electrostatic Discharge" id="7d7f-bf86-2c7e-1d4a" hidden="false">
       <description>At the start of the Assault phase, before Initiative steps are resolved, nominate a single enemy unit in base contact. That unit suffers D3 automatic hits at Strength 6, AP–.</description>
+    </rule>
+    <rule name="Deflagrate" id="9065-911e-d591-1703" hidden="false">
+      <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately Resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
