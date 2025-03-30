@@ -161,6 +161,12 @@
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" value="1" field="948f-99b9-dbb8-b3c8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="d6f1-3c59-a0fb-db24" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
@@ -171,11 +177,6 @@
             <modifier type="increment" value="1" field="6745-7e9a-95c5-aa3a">
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" value="1" field="6745-7e9a-95c5-aa3a">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="roster" childId="f8bd9936-ebd1-1cd3-f997-dde318ca7185" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -191,6 +192,11 @@
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" value="1" field="162f-6e6d-174c-0ec4">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Heavy Support" hidden="false" id="f079-89be-67f6-a13b" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
@@ -202,6 +208,11 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="59f8-bb16-7cd2-7972">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>

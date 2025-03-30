@@ -649,6 +649,12 @@
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" value="1" field="155c-81eb-67cc-f9fd">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="cfe4-d375-e09a-687e" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
@@ -673,6 +679,12 @@
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" value="1" field="9d07-8001-912a-376b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Heavy Support" hidden="false" id="af5d-f757-0bf5-1058" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="categoryEntry">
@@ -683,6 +695,12 @@
             <modifier type="increment" value="1" field="0ec6-e2ff-f286-0f64">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="0ec6-e2ff-f286-0f64">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
