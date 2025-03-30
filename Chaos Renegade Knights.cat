@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2003" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2004" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lord of War" hidden="false"/>
   </categoryEntries>
@@ -19,11 +19,15 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="f3fd-13bf-afe6-6d8f" hidden="false" collective="false" import="true" targetId="8077-af66-ff34-45f5" type="selectionEntry" name="Renegade Questoris Knight">
+    <entryLink id="f3fd-13bf-afe6-6d8f" hidden="false" collective="false" import="true" targetId="8077-af66-ff34-45f5" type="selectionEntry" name="Renegade Knight">
       <categoryLinks>
         <categoryLink id="f3fd-13bf-afe6-6d8f-c888f08a-6cea-4a01-8126-d374a9231554" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Renegade Knight Acastus" hidden="false" id="18ec-b20b-6e48-32c8" type="selectionEntry" targetId="4809-6836-ddbf-b899"/>
+    <entryLink import="true" name="Renegade Knight Armiger" hidden="false" id="4ab2-4bfa-7960-17d9" type="selectionEntry" targetId="e2e6-21c6-0a69-a35e"/>
+    <entryLink import="true" name="Renegade Knight Cerastus" hidden="false" id="d434-784e-895a-3858" type="selectionEntry" targetId="b99b-715e-0e05-c599"/>
+    <entryLink import="true" name="Renegade Knight Dominus" hidden="false" id="b7a1-427b-2195-bad8" type="selectionEntry" targetId="b95d-d337-407e-48cc"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Knight" hidden="false" collective="false" import="true" type="upgrade">
@@ -79,7 +83,6 @@
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="659e-2ab4-8270-3781"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Daemon Knight upgrade" id="5a01-11e0-a303-f971" hidden="false" collective="false" import="true">
@@ -505,6 +508,28 @@
       <costs>
         <cost name="pts" typeId="points" value="150"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ion Buckler" hidden="false" id="b77d-00b8-c75f-d38c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30db-b8a7-18df-b089" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b865-7ade-bc76-3ab1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ion Buckler" id="febf-9370-7951-3e22" hidden="false" type="profile" targetId="e1f2-52b6-2e82-0558"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="16e4-cd44-9725-a443" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="05ce-d687-73a6-0d55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dirge Caster" id="0f0f-c530-bb54-2cf5" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Renegade Knight Dominus" hidden="false" id="b95d-d337-407e-48cc">
       <profiles>
@@ -529,6 +554,31 @@
       <costs>
         <cost name="pts" typeId="points" value="420"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ion Shield" hidden="false" id="1fe0-e097-1043-802f" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1d72-81ab-4a78-1fa6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0c2d-aa55-20e0-a99a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ion Shield" id="bda8-4126-0ba1-a4c4" hidden="false" targetId="aa51-04c0-9c9f-ebd4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="3cff-b723-fe57-0da9" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aa61-a886-f9ae-bf1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dirge Caster" id="c64f-c019-7f44-07a0" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Renegade Knight Cerastus" hidden="false" id="b99b-715e-0e05-c599">
       <profiles>
@@ -553,6 +603,31 @@
       <costs>
         <cost name="pts" typeId="points" value="380"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ion Shield" hidden="false" id="8cb8-5d6c-224d-3a84" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0516-a79a-bb8f-ee95" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="d807-b0b3-86bc-4b86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ion Shield" id="f11b-912c-2577-e0e0" hidden="false" targetId="aa51-04c0-9c9f-ebd4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="c385-ec37-be4b-2e2b" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b61e-c91d-cc9c-cbc8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dirge Caster" id="ae67-706e-aa4c-2acb" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Renegade Knight Acastus" hidden="false" id="4809-6836-ddbf-b899">
       <profiles>
@@ -577,6 +652,31 @@
       <costs>
         <cost name="pts" typeId="points" value="540"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ion Shield" hidden="false" id="2c5b-0ba4-0be2-e841" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1737-7fe8-b576-8e93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0995-1859-dc61-c1ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ion Shield" id="db8b-c900-02bb-6fcc" hidden="false" targetId="aa51-04c0-9c9f-ebd4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="df8f-b96e-bac0-0150" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="addc-63ef-25ad-736b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dirge Caster" id="3892-47b9-9289-be86" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -674,6 +774,18 @@
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Electroscourge" hidden="false" id="6af6-a252-c19b-3763">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d15-ba96-db92-fac5" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Electroscourge" id="5609-442e-58c6-0128" hidden="false" type="profile" targetId="e17e-266f-0766-2cf1"/>
+            <infoLink name="Electrostatic Discharge" id="d3c4-802c-f1d9-caf9" hidden="false" type="rule" targetId="7d7f-bf86-2c7e-1d4a"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="06e7-7163-f288-0913" name="Thunderstrike Gauntlet and Alternatives" hidden="false" collective="false" import="true" defaultSelectionEntryId="58bd-27b8-3c60-fda2">
@@ -731,7 +843,21 @@
             <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Volkite Combustor" hidden="false" id="1ebd-5b64-9820-bd46">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Volkite Combustor" id="deb5-3748-609b-f159" hidden="false" type="profile" targetId="18a6-caf0-212d-4821"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8838-75b1-6afa-8cfa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" id="dc66-9fad-a225-d7d4" primary="false" name="No Force Org Slot"/>
+      </categoryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Hull Weapons" id="ab4b-b220-3492-cf21" hidden="false">
       <constraints>
@@ -793,6 +919,9 @@
     </rule>
     <rule name="Tail Swipe" id="1a2a-61e3-c354-8b26" hidden="false">
       <description>This weapon makes a single bonus attack at Initiative step 1 in addition to the model’s normal attacks (even with Unwieldy). This does not benefit from Smash or any other special melee weapons.</description>
+    </rule>
+    <rule name="Electrostatic Discharge" id="7d7f-bf86-2c7e-1d4a" hidden="false">
+      <description>At the start of the Assault phase, before Initiative steps are resolved, nominate a single enemy unit in base contact. That unit suffers D3 automatic hits at Strength 6, AP–.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -892,6 +1021,27 @@
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Concussive, Tail Swipe</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ion Buckler" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="e1f2-52b6-2e82-0558">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">An Armiger Knight armour is constructed with a smaller, less power-hungry ion shielding array. This device is capable of switching its defensive alignment both more swiftly and more accurately than the larger Ion Shield, but provides only a fraction of its larger cousin’s protection. An ion buckler grants the Knight Armiger a 5+ Invulnerable Save against all shooting attacks, but grants no benefits against close combat attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Volkite Combustor" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="18a6-caf0-212d-4821">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 5, Deflagrate</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Electroscourge" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e17e-266f-0766-2cf1">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Shred, Electrostatic Discharge</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
