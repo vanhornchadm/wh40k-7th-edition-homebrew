@@ -140,6 +140,74 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Battlegroup Detachment" id="8a5c-daf5-9690-7291" hidden="false">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" hidden="false" id="40c6-513c-3df6-bb1f" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+        <categoryLink name="HQ" hidden="false" id="9bc4-7916-3d16-74d2" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="923f-cbf8-c228-09ff" includeChildSelections="true"/>
+            <constraint type="max" value="25" field="limit::points" scope="roster" shared="false" id="8781-7235-664e-4e77" percentValue="true" includeChildForces="true" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="d92f-9f2c-1be4-2006" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="948f-99b9-dbb8-b3c8" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="948f-99b9-dbb8-b3c8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="d6f1-3c59-a0fb-db24" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="6745-7e9a-95c5-aa3a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6745-7e9a-95c5-aa3a">
+              <repeats>
+                <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="6745-7e9a-95c5-aa3a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="df19-a195-1908-b925" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="c167-14eb-82a3-13ba" targetId="c274d0b0-5866-44bc-9810-91c136ae7438">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="162f-6e6d-174c-0ec4"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="162f-6e6d-174c-0ec4">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="f079-89be-67f6-a13b" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="59f8-bb16-7cd2-7972"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="59f8-bb16-7cd2-7972">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fortification" hidden="false" id="7964-2551-63c3-af56" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a"/>
+        <categoryLink name="Lord of War" hidden="false" id="f0f2-a4b9-7924-f70e" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
+        <categoryLink name="Legendary Unit" hidden="false" id="5fd9-6f99-8809-add1" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <entryLinks>
     <entryLink id="4128-5ccd-14f9-812d" hidden="false" collective="false" import="true" targetId="f5d6-e31d-a6b6-c63d" type="selectionEntry" name="Rogue Psykers Coven">
