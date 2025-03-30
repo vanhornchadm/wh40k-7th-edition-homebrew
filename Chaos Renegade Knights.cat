@@ -42,7 +42,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Knight" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8077-af66-ff34-45f5" name="Renegade Knight" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b8a6-aa9e-b268-fd4b" name="Renegade Knight" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker">
           <characteristics>
@@ -500,53 +500,61 @@
         <modifier type="set" value="true" field="hidden"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Knight Armiger" hidden="false" id="e2e6-21c6-0a69-a35e">
-      <profiles>
-        <profile name="Renegade Knight Armiger" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c779-4ec8-1e83-9595">
-          <characteristics>
-            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">7</characteristic>
-            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
-            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
-            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">11</characteristic>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">4</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Walker)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry type="unit" import="true" name="Renegade Knight Armiger Squadron" hidden="false" id="e2e6-21c6-0a69-a35e">
       <costs>
         <cost name="pts" typeId="points" value="150"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ion Buckler" hidden="false" id="b77d-00b8-c75f-d38c">
+        <selectionEntry type="model" import="true" name="Renegade Knight Armiger" hidden="false" id="555e-0ee9-1fb1-0ccc">
+          <profiles>
+            <profile name="Renegade Knight Armiger" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c779-4ec8-1e83-9595">
+              <characteristics>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">7</characteristic>
+                <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+                <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+                <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">11</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">4</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Walker)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ion Buckler" hidden="false" id="b77d-00b8-c75f-d38c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30db-b8a7-18df-b089" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b865-7ade-bc76-3ab1" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Ion Buckler" id="febf-9370-7951-3e22" hidden="false" type="profile" targetId="e1f2-52b6-2e82-0558"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="16e4-cd44-9725-a443" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="05ce-d687-73a6-0d55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dirge Caster" id="0f0f-c530-bb54-2cf5" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30db-b8a7-18df-b089" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b865-7ade-bc76-3ab1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f683-b83a-3105-3fc8" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d8cf-032a-2d08-bdb2" includeChildSelections="false"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Ion Buckler" id="febf-9370-7951-3e22" hidden="false" type="profile" targetId="e1f2-52b6-2e82-0558"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dirge Caster" hidden="false" id="16e4-cd44-9725-a443" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="05ce-d687-73a6-0d55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Dirge Caster" id="0f0f-c530-bb54-2cf5" hidden="false" targetId="87d2-daa6-ee28-d634" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="0dcc-4348-b371-55cd" primary="false" name="Lord of War"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Knight Dominus" hidden="false" id="b95d-d337-407e-48cc">
+    <selectionEntry type="model" import="true" name="Renegade Knight Dominus" hidden="false" id="b95d-d337-407e-48cc">
       <profiles>
         <profile name="Renegade Knight Dominus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="a890-053c-51c1-f6f3">
           <characteristics>
@@ -595,7 +603,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Knight Cerastus" hidden="false" id="b99b-715e-0e05-c599">
+    <selectionEntry type="model" import="true" name="Renegade Knight Cerastus" hidden="false" id="b99b-715e-0e05-c599">
       <profiles>
         <profile name="Renegade Knight Cerastus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="104d-eb56-556d-53c3">
           <characteristics>
@@ -644,7 +652,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Renegade Knight Acastus" hidden="false" id="4809-6836-ddbf-b899">
+    <selectionEntry type="model" import="true" name="Renegade Knight Acastus" hidden="false" id="4809-6836-ddbf-b899">
       <profiles>
         <profile name="Renegade Knight Acastus" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="c58e-1493-04a0-a714">
           <characteristics>
