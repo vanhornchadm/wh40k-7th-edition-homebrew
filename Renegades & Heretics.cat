@@ -175,7 +175,7 @@
             </modifier>
             <modifier type="decrement" value="1" field="6745-7e9a-95c5-aa3a">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="df19-a195-1908-b925" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="f8bd9936-ebd1-1cd3-f997-dde318ca7185" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
           </modifiers>
