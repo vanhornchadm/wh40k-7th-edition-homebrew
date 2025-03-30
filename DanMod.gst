@@ -653,7 +653,7 @@
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="cfe4-d375-e09a-687e" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="00eb-e548-aedc-7ee9" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="00eb-e548-aedc-7ee9" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="00eb-e548-aedc-7ee9">
