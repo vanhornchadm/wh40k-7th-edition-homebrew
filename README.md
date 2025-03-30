@@ -8,7 +8,7 @@ DanMod for Warhammer 40,000 7th Edition
 
 ### Chaos Renegade Knights ###
 * Add new wargear to Renegade Knight
-* Add new units
+* Add new units (WIP)
   * Renegade Knight Acastus
   * Renegade Knight Armiger
   * Renegade Knight Cerastus
