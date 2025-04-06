@@ -682,7 +682,7 @@
             <modifier type="decrement" value="1" field="9d07-8001-912a-376b">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="true" roundUp="false" includeChildSelections="true"/>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -699,7 +699,7 @@
             </modifier>
             <modifier type="decrement" value="1" field="0ec6-e2ff-f286-0f64">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
                 <repeat value="1" repeats="1" field="selections" scope="force" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
