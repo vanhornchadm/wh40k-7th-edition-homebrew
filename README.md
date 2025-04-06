@@ -14,6 +14,9 @@ DanMod for Warhammer 40,000 7th Edition
   * Renegade Knight Cerastus
   * Renegade Knight Dominus
 
+*** Chaos Space Marines ***
+* Added Helstalker to Warpsmith (Lord Discordant Equivalent)
+
 Warhammer 40,000 7th Edition (OLD)
 ============================
 
