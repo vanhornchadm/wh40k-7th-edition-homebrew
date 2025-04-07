@@ -839,6 +839,18 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f042-ba8f-0f34-d03b" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Las-Impulsor" hidden="false" id="c1ec-e754-52f7-9e6f" sortIndex="3">
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Las-Impulsor (High Intensity)" id="a214-4f74-8369-28b9" hidden="false" type="profile" targetId="a678-ea0c-4dfd-f913"/>
+            <infoLink name="Las-Impulsor (Low Intensity)" id="3673-761c-0739-eb98" hidden="false" type="profile" targetId="702d-ded1-eb54-5f4b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c939-e3fb-ff22-2c64"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="06e7-7163-f288-0913" name="Thunderstrike Gauntlet and Alternatives" hidden="false" collective="false" import="true" defaultSelectionEntryId="58bd-27b8-3c60-fda2">
@@ -906,6 +918,18 @@
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8838-75b1-6afa-8cfa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Las-Impulsor" hidden="false" id="89b8-35ef-e969-7cd1" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Las-Impulsor (High Intensity)" id="95aa-b7b3-da2a-2a55" hidden="false" type="profile" targetId="a678-ea0c-4dfd-f913"/>
+            <infoLink name="Las-Impulsor (Low Intensity)" id="341a-4ff2-2269-b826" hidden="false" type="profile" targetId="702d-ded1-eb54-5f4b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4c43-b843-a086-482e"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1099,6 +1123,22 @@
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Shred, Electrostatic Discharge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Las-Impulsor (High Intensity)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a678-ea0c-4dfd-f913">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Large Blast, Gets Hot</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Las-Impulsor (Low Intensity)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="702d-ded1-eb54-5f4b">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2, Blast</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
