@@ -26027,6 +26027,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
           <entryLinks>
             <entryLink import="true" name="Searchlight" hidden="false" id="6727-cf93-4a8e-55b0" type="selectionEntry" targetId="9a52-7dfa-ebd7-2fb6"/>
             <entryLink import="true" name="Smoke Launchers" hidden="false" id="feb2-6b93-9c66-8ac1" type="selectionEntry" targetId="12ab-f49a-fc79-0e30"/>
+            <entryLink import="true" name="Legacies of Ruin (Tanks)" hidden="false" id="3b7b-64f6-b348-df74" type="selectionEntryGroup" targetId="9be57471-9796-716e-1145-bd67dedf8425"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="65"/>
