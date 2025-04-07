@@ -824,12 +824,12 @@
             <infoLink name="Thermal Cannon" id="561a-ced2-a5b4-4b5c" hidden="false" targetId="b460-6389-8095-3046" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Volkite Combustor" hidden="false" id="229f-9b01-a39d-5fe3">
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
           <infoLinks>
             <infoLink name="Volkite Combustor" id="2156-f364-99d4-b138" hidden="false" type="profile" targetId="18a6-caf0-212d-4821"/>
