@@ -25588,7 +25588,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                 <cost name="pts" typeId="points" value="15"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Maelific Ammo on all Leviathan storm cannons" hidden="false" id="93e2-a676-016b-da83" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Maelific Ammo on all Leviathan storm cannons" hidden="true" id="93e2-a676-016b-da83" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9b83-f99a-d412-8cbd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -25599,7 +25599,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                 <cost name="pts" typeId="points" value="40"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="7dc5-7934-416e-0980" childId="c024-c5a7-1004-5c17" shared="true"/>
                   </conditions>
