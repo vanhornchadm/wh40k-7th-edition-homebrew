@@ -2016,6 +2016,7 @@ D6 Result
         <categoryLink id="5072-fdd6-e0c3-a9cb-c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="[FW] Chaos Infernal Relic Leviathan Dreadnought" hidden="false" id="0815-2695-f306-fe75" type="selectionEntry" targetId="7dc5-7934-416e-0980"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="70e4-4d8f-b97f-3aaa" name="[FW] Arkos the Faithless (IA: Vraks)" publicationId="5af86795--pubN75167" page="153" hidden="true" collective="false" import="true" type="upgrade">
