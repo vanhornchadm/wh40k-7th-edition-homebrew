@@ -25860,7 +25860,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaca-b871-ce26-7958" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Volkite Saker" hidden="false" id="cc3c-6d21-6d2b-4a39" publicationId="ca571888--pubN106705" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Volkite Saker" hidden="false" id="cc3c-6d21-6d2b-4a39" publicationId="ca571888--pubN106705" collective="false" sortIndex="0">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="183d-7dde-3011-8139" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -25903,7 +25903,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                     <cost name="pts" typeId="points" value="20"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Anvilus snub autocannon" hidden="false" id="a749-641d-cc8f-f0ac" publicationId="ca571888--pubN106705" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Anvilus snub autocannon" hidden="false" id="a749-641d-cc8f-f0ac" publicationId="ca571888--pubN106705" collective="false" sortIndex="0">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e6d-afe0-9c77-cf09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -26000,10 +26000,10 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5862-927d-61f9-a360" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Heavy Flamer" hidden="false" id="b255-8aca-15a9-c8bf" collective="false" targetId="241a-cb6e-d920-9bdd" type="selectionEntry"/>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="b255-8aca-15a9-c8bf" collective="false" targetId="241a-cb6e-d920-9bdd" type="selectionEntry" sortIndex="0"/>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c15e-14da-5edb-7326" collective="false">
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c15e-14da-5edb-7326" collective="false" sortIndex="0">
                   <infoLinks>
                     <infoLink name="Heavy Bolter" id="33dd-2cdc-ff67-5703" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
                   </infoLinks>
@@ -26016,7 +26016,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                     <cost name="pts" typeId="points" value="25"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Volkite Culverin" hidden="false" id="877e-6e60-5c3e-228d">
+                <selectionEntry type="upgrade" import="true" name="Volkite Culverin" hidden="false" id="877e-6e60-5c3e-228d" sortIndex="1">
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
                   </costs>
