@@ -25417,7 +25417,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="caf5-714c-6faf-3ea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="caf5-714c-6faf-3ea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
