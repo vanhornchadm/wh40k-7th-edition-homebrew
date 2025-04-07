@@ -25637,6 +25637,9 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
       <costs>
         <cost name="pts" typeId="points" value="285"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="fc5e-ac8f-82c8-d39b" primary="false" name="Heavy Support"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ceramite Plating" hidden="false" id="c62d-e176-1dca-9b46">
       <infoLinks>
