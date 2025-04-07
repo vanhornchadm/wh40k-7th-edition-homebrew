@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2004" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2005" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lord of War" hidden="false"/>
   </categoryEntries>
@@ -29,7 +29,7 @@
         <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="d68f-aeae-81a7-d39a" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Renegade Knight Armiger" hidden="false" id="4ab2-4bfa-7960-17d9" type="selectionEntry" targetId="e2e6-21c6-0a69-a35e">
+    <entryLink import="true" name="Renegade Knight Armiger Squadron" hidden="false" id="4ab2-4bfa-7960-17d9" type="selectionEntry" targetId="e2e6-21c6-0a69-a35e">
       <categoryLinks>
         <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="735a-26fc-5f31-80fa" primary="true" name="Lord of War"/>
       </categoryLinks>
@@ -757,7 +757,7 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ea0a-3bcf-9d01-18e0" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ea0a-3bcf-9d01-18e0" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade" sortIndex="0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -792,7 +792,7 @@
             <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="da03-308e-a875-4c14" name="Foe-reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="da03-308e-a875-4c14" name="Foe-reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02fb-2878-ba21-a532" type="max"/>
           </constraints>
@@ -804,7 +804,7 @@
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Electroscourge" hidden="false" id="6af6-a252-c19b-3763">
+        <selectionEntry type="upgrade" import="true" name="Electroscourge" hidden="false" id="6af6-a252-c19b-3763" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d15-ba96-db92-fac5" includeChildSelections="false"/>
           </constraints>
@@ -824,7 +824,7 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="58bd-27b8-3c60-fda2" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="58bd-27b8-3c60-fda2" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade" sortIndex="0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -838,7 +838,7 @@
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c437-54ad-b22c-9496" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c437-54ad-b22c-9496" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
