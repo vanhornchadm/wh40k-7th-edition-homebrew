@@ -816,6 +816,29 @@
             <cost name="pts" typeId="points" value="5"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thermal Cannon" hidden="false" id="69c7-1d6f-04cf-f03e" collective="false" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="baf4-33f5-3861-6c1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Thermal Cannon" id="561a-ced2-a5b4-4b5c" hidden="false" targetId="b460-6389-8095-3046" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Volkite Combustor" hidden="false" id="229f-9b01-a39d-5fe3">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Volkite Combustor" id="2156-f364-99d4-b138" hidden="false" type="profile" targetId="18a6-caf0-212d-4821"/>
+            <infoLink name="Deflagrate" id="9433-07eb-3da2-fa53" hidden="false" type="rule" targetId="9065-911e-d591-1703"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f042-ba8f-0f34-d03b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="06e7-7163-f288-0913" name="Thunderstrike Gauntlet and Alternatives" hidden="false" collective="false" import="true" defaultSelectionEntryId="58bd-27b8-3c60-fda2">
