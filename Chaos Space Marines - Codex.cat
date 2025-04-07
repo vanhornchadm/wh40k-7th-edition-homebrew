@@ -25468,10 +25468,10 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="9321-fe0a-07c8-057e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Leviathan Seige Claw w/ Meltagun" hidden="false" id="54fb-b0f0-9680-4334" collective="false" targetId="3b45-9f0a-5666-8057" type="selectionEntry"/>
+            <entryLink import="true" name="Leviathan Seige Claw w/ Meltagun" hidden="false" id="54fb-b0f0-9680-4334" collective="false" targetId="3b45-9f0a-5666-8057" type="selectionEntry" sortIndex="0"/>
             <entryLink import="true" name="Leviathan Storm Cannon" hidden="false" id="7761-fab5-362a-dd1c" collective="false" targetId="c024-c5a7-1004-5c17" type="selectionEntry"/>
             <entryLink import="true" name="Cyclonic Melta Lance" hidden="false" id="2d21-0514-28b9-32d7" collective="false" targetId="ae83-c8c5-fab0-7af9" type="selectionEntry"/>
-            <entryLink import="true" name="Leviathan Seige Drill w/ Meltagun" hidden="false" id="de07-d70d-2cfa-820d" collective="false" targetId="3fd6-344a-5a3d-f951" type="selectionEntry"/>
+            <entryLink import="true" name="Leviathan Seige Drill w/ Meltagun" hidden="false" id="de07-d70d-2cfa-820d" collective="false" targetId="3fd6-344a-5a3d-f951" type="selectionEntry" sortIndex="0"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Right Arm" id="2427-f5fd-d63a-b729" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee76-a3ac-7422-12f4">
@@ -25480,10 +25480,10 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6079-0c0d-8c40-4a8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Leviathan Seige Claw w/ Meltagun" hidden="false" id="d2ac-c613-8eb2-ed68" collective="false" targetId="3b45-9f0a-5666-8057" type="selectionEntry"/>
+            <entryLink import="true" name="Leviathan Seige Claw w/ Meltagun" hidden="false" id="d2ac-c613-8eb2-ed68" collective="false" targetId="3b45-9f0a-5666-8057" type="selectionEntry" sortIndex="0"/>
             <entryLink import="true" name="Leviathan Storm Cannon" hidden="false" id="2257-a859-04e0-165c" collective="false" targetId="c024-c5a7-1004-5c17" type="selectionEntry"/>
             <entryLink import="true" name="Cyclonic Melta Lance" hidden="false" id="ac6d-4b5f-435d-5af3" collective="false" targetId="ae83-c8c5-fab0-7af9" type="selectionEntry"/>
-            <entryLink import="true" name="Leviathan Seige Drill w/ Meltagun" hidden="false" id="6de2-338c-914e-db11" collective="false" targetId="3fd6-344a-5a3d-f951" type="selectionEntry"/>
+            <entryLink import="true" name="Leviathan Seige Drill w/ Meltagun" hidden="false" id="6de2-338c-914e-db11" collective="false" targetId="3fd6-344a-5a3d-f951" type="selectionEntry" sortIndex="0"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Dedications of Chaos" id="8ae7-1044-7e59-48ec" hidden="false" collective="false" import="true">
