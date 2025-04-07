@@ -434,13 +434,6 @@ D6 Result
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="3203-e3d9-6d38-9131" name="Force Options (Supplement options here)" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or"/>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f31d-5c5c-b07f-de8f" type="min"/>
