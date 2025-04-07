@@ -15,7 +15,9 @@ DanMod for Warhammer 40,000 7th Edition
   * Renegade Knight Dominus
 
 *** Chaos Space Marines ***
-* Added Helstalker to Warpsmith (Lord Discordant Equivalent)
+* Add Helstalker to Warpsmith (Lord Discordant Equivalent)
+* Add new units
+  * Relic Leviathan Dreadnought
 
 Warhammer 40,000 7th Edition (OLD)
 ============================
