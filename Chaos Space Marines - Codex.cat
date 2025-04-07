@@ -25413,7 +25413,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         <cost name="pts" typeId="points" value="20"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="[FW] Chaos Relic Leviathan Dreadnought" hidden="false" id="7dc5-7934-416e-0980" collective="false">
+    <selectionEntry type="model" import="true" name="[FW] Chaos Infernal Relic Leviathan Dreadnought" hidden="false" id="7dc5-7934-416e-0980" collective="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -25425,7 +25425,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fa82-c0c7-b8dd-ba8d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <profiles>
-        <profile name="Relic Leviathan Dreadnought" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="87c1-b608-fe49-47c8" publicationId="7ab0-ceb9-pubN174565">
+        <profile name="Chaos Infernal Relic Leviathan Dreadnought" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="87c1-b608-fe49-47c8" publicationId="7ab0-ceb9-pubN174565">
           <characteristics>
             <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
             <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
@@ -25455,12 +25455,10 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         <rule name="Crushing Charge" id="b873-eaef-4e2e-1226" hidden="false" publicationId="7ab0-ceb9-pubN174565">
           <description>When charging, the model inflicts 2 Hammer of Wrath attacks and gains +1 Initiative in the Assault phase of any turn in which it has charged.</description>
         </rule>
-        <rule name="Relic of Darkness" id="8462-87cf-efb5-b2aa" hidden="false" publicationId="7ab0-ceb9-pubN174565">
-          <description>Counts as a Relic of the Armoury, but may not take a Legacy of Glory upgrade. In addition, a model with this special rule is immune to Malediction psychic powers, can never be a scoring unit and must always make charges and Sweeping Advances if they are able. A model with this special rule may not benefit from any rules or bonuses usually conferred by being part of a particular Chapter, detachment, or formation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Move Through Cover" id="cb4c-5432-ddec-779f" hidden="false" targetId="7ecc-bc3d-6e22-63dc" type="rule"/>
+        <infoLink name="Infernal Relic" id="248a-42cb-24a7-932f" hidden="false" type="rule" targetId="7050b6c0-56e6-f142-9579-83b73560e74c"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Left Arm" id="4abe-09ae-e6d5-9030" hidden="false" collective="false" import="true" defaultSelectionEntryId="e700-d3c3-a2e9-695e">
@@ -25486,6 +25484,84 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             <entryLink import="true" name="Cyclonic Melta Lance" hidden="false" id="ac6d-4b5f-435d-5af3" collective="false" targetId="ae83-c8c5-fab0-7af9" type="selectionEntry"/>
             <entryLink import="true" name="Leviathan Seige Drill w/ Meltagun" hidden="false" id="6de2-338c-914e-db11" collective="false" targetId="3fd6-344a-5a3d-f951" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedications of Chaos" id="8ae7-1044-7e59-48ec" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a161-4332-acc6-d25b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedication of Khorne" hidden="false" id="8b49-fa88-4d26-a278" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="f68f-89dc-76d2-7e00" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Rage" id="ade0-3252-fad0-3c6e" hidden="false" targetId="3ac5-a550-39f8-f28a" type="rule"/>
+                <infoLink name="Rampage" id="a795-b483-b2cb-4338" hidden="false" targetId="814f-6a54-47ae-6abd" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dedications of Nurgle" hidden="false" id="b3a3-b44a-b444-6504" page="0" collective="false">
+              <infoLinks>
+                <infoLink name="It Will Not Die" id="11f5-8f22-0baa-fe09" hidden="false" targetId="8de3-9e93-da02-b9dd" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dedications of Slaanesh" hidden="false" id="053d-d392-eea6-00bf" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="f68f-89dc-76d2-7e00" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Assault Grenades" id="9371-b172-fcc2-abfa" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile"/>
+                <infoLink name="Defensive Grenade" id="55fc-5cbb-bfa2-7ab6" hidden="false" targetId="4a90-2615-6958-53cd" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dedications of Tzeentch" hidden="false" id="d07f-1901-6d14-7c1e" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="f68f-89dc-76d2-7e00" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9be1-8ff4-6e6e-0df1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Dedication of Tzeentch" id="dc06-f91f-6ca4-fc7e" hidden="false" page="0">
+                  <description>May re-roll all invunerable save rolls of a 1. All Heavy Flamers equipped have Soul Blaze</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Soul Blaze" id="fefb-007f-5215-2c8f" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -25530,6 +25606,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
           </constraints>
         </entryLink>
         <entryLink import="true" name="Smoke Launchers" hidden="false" id="b449-9699-a161-33bc" type="selectionEntry" targetId="12ab-f49a-fc79-0e30"/>
+        <entryLink import="true" name="Legacies of Ruin (Walkers)" hidden="false" id="3328-80de-8712-ef19" collective="false" targetId="48064679-8bfe-230a-befd-c38cb590f9b9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="285"/>
