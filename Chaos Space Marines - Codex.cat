@@ -25958,10 +25958,6 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
               </entryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Combi-bolter" hidden="false" id="316f-b46f-c3a6-9e6d" page="0" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="aa09-a706-577b-cf25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3ae3-7443-42b7-2096" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink name="Combi-Bolter" id="3e44-792e-1c1e-d23c" hidden="false" targetId="40d66948-d966-cfee-bbec-f78da952dd38" type="profile"/>
                   </infoLinks>
