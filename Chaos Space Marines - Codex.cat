@@ -25563,6 +25563,50 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="May have" id="2504-3ab5-d285-c39b" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="8dcf-fe18-8fcd-08f5" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f7a6-8ece-2011-e5a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="1214-545c-cdab-d23d" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carapace Mounted Havoc launcher" hidden="false" id="7ee2-b83b-7093-9e6a" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="42d5-770f-f713-b0bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Havoc Launcher" id="45be-a248-0a5d-28e9" hidden="false" targetId="bdf8b5a5-7f79-c8bb-3059-5ad2266b4d0d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Maelific Ammo on all Leviathan storm cannons" hidden="false" id="93e2-a676-016b-da83" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9b83-f99a-d412-8cbd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Maelific Ammunition" id="e069-f758-6b8b-17dd" hidden="false" targetId="12257a6f-0d61-5535-fcbb-fc7593d3e190" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7dc5-7934-416e-0980" childId="c024-c5a7-1004-5c17" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="cd48-4245-9dee-f9c7" collective="false" targetId="259a-3ce5-8ebb-f7f7" type="selectionEntry">
@@ -25572,15 +25616,6 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         </entryLink>
         <entryLink import="true" name="Searchlight" hidden="false" id="a902-e105-3390-3d2f" collective="false" targetId="9a52-7dfa-ebd7-2fb6" type="selectionEntry"/>
         <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="8eb6-0bfd-d044-6337" collective="false" targetId="6f76-b208-b053-f904" type="selectionEntry"/>
-        <entryLink import="true" name="Extra Armour" hidden="false" id="14f9-1e3d-22a1-f8a4" collective="false" targetId="6709-b0a4-d809-8602" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="0" field="points"/>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="25a7-1ff3-7002-2a8d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f7dd-8df8-80ee-9224" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Heavy Flamer" hidden="false" id="5f54-71af-1ee8-cc88" collective="false" targetId="241a-cb6e-d920-9bdd" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="0" field="points"/>
@@ -25589,15 +25624,6 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f387-0984-5665-859a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="dc40-0065-01a9-6358" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Havoc Launcher" hidden="false" id="eec2-3681-aa7a-a24e" collective="false" targetId="384f-50d0-8913-1c9d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="15" field="points"/>
-            <modifier type="set" value="Three Hunter-Killer Missiles" field="name"/>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3e83-fb98-2cd1-9baf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Ceramite Plating" hidden="false" id="35d1-a2a0-e56d-9629" collective="false" targetId="c62d-e176-1dca-9b46" type="selectionEntry">
