@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2028" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2029" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5af86795--pubN75167" name="IA Vraks 2015"/>
     <publication id="5af86795--pubN75711" name="Imperial Armour 13"/>
@@ -2011,6 +2011,16 @@ D6 Result
     </entryLink>
     <entryLink import="true" name="[FW] Chaos Infernal Relic Leviathan Dreadnought" hidden="false" id="0815-2695-f306-fe75" type="selectionEntry" targetId="7dc5-7934-416e-0980"/>
     <entryLink import="true" name="[FW] Chaos Sabre Strike Tank Squadron" hidden="false" id="8763-ff03-5be0-b609" type="selectionEntry" targetId="3af9-eca8-7023-7aa8"/>
+    <entryLink import="true" name="[FW] Chaos Mastodon Heavy Assault Transport" hidden="false" id="25e2-334a-a3bb-794d" type="selectionEntry" targetId="b597-3566-de6d-852a">
+      <categoryLinks>
+        <categoryLink targetId="c888f08a-6cea-4a01-8126-d374a9231554" id="501a-fad2-4462-fcec" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="[FW] Chaos Caestus Assault Ram" hidden="false" id="bc71-d620-2e5c-94bf" type="selectionEntry" targetId="f368-0fc9-1639-a828">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="098e-04f2-93a2-d74c" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="70e4-4d8f-b97f-3aaa" name="[FW] Arkos the Faithless (IA: Vraks)" publicationId="5af86795--pubN75167" page="153" hidden="true" collective="false" import="true" type="upgrade">
@@ -26055,6 +26065,327 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="[FW] Chaos Mastodon Heavy Assault Transport" hidden="false" id="b597-3566-de6d-852a" publicationId="7ab0-ceb9-pubN218282" collective="false">
+      <profiles>
+        <profile name="Mastodon" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="bc38-e48c-11f4-6460" publicationId="7ab0-ceb9-pubN174565">
+          <characteristics>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">14</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">14</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">14</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">10</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Super-heavy Vehicle, Transport</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Reinforced Shell" id="72f6-f68e-348a-2cf5" hidden="false" publicationId="7ab0-ceb9-pubN218282" page="2">
+          <description>If a Mastodon is Destroyed, reduce the roll made on the Catastrophic Damage table by -2. If the result rolled is actually &apos;0&apos; or &apos;-1&apos; after this modifier is taken into account, the Mastodon does not Explode, but it instead becomes a broken shell (note that it still counts as being destroyed for the purpose of Victory points or any relevant mission objectives however). Any models transported inside suffer an immediate Strength 4 hit - Vehicles are struck on their weakest Armour value. From this point onwards, its shell is treated as a ruined building rather than a vehicle wreck, with its two doorways counted as being open access points to the interior.</description>
+        </rule>
+        <rule name="Enhanced Defensive Fire" id="b468-30a5-1635-31e4" hidden="false" publicationId="7ab0-ceb9-pubN218282" page="2">
+          <description>So long as at least one unit occupies the Mastodon, the Mastodon may use Overwatch fire with its sponson-mounted weapons when assaulted. When this is the case, each sponson may be fired once per Assault phase at an assaulting unit within the particular weapon&apos;s arc of fire. In the case of the Mastodon&apos;s lascannon, this Overwatch fire is carried out at BS 2, and in the case of the Mastodon&apos;s heavy flamers, D3+1 automatic hits are inflicted per heavy flamer on the assaulting unit that is fired upon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="307d-3f11-be47-a987" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Siege Melta Array" hidden="false" id="5463-6e27-5982-ac6c" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7e1f-1f2f-36c6-694b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e3d2-44bf-851f-f44f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Siege Melta Array" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="eaa4-40d4-68d0-c6da" publicationId="7ab0-ceb9-pubN218282" page="2">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4, 3&quot; Blast, Melta, Stone Burner</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Stone Burner" id="7c45-7cd3-7138-8384" hidden="false" publicationId="7ab0-ceb9-pubN218282" page="2">
+              <description>When striking against buildings and fortifications, each penetrating hit inflicted becomes D3 penetrating hits.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Super-heavy Command Tank" hidden="false" id="4fd0-48c6-0f98-5d68" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9ded-5cdb-57f9-eba4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Command Tank" id="a05b-73b0-79a8-6650" hidden="false" publicationId="7ab0-ceb9-pubN218573" page="6"/>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="4eff-47fc-15c5-14e2" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="0017-2cb2-1f7b-554d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="6166-da02-a582-6af5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="b5be-1346-118c-aaa6" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="9e96-0bd1-47dc-742b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="bc94-6290-4910-3710" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Void Shields" hidden="false" id="b5fe-c179-40b9-f00e" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="7103-41c4-2d96-8d90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="dd21-308d-9724-94b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Void Shield" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="aa8a-1c6e-9fe2-762e" publicationId="7ab0-ceb9-pubN218745" page="0">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void  shield: each roll of 5+ instantly restores one collapsed shield.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" id="dc7e-8553-7739-e281">
+          <costs>
+            <cost name="pts" typeId="points" value="12"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Havoc Launcher" id="1787-38e2-fb0f-9fb3" hidden="false" type="profile" targetId="bdf8b5a5-7f79-c8bb-3059-5ad2266b4d0d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfa7-6c0d-afca-270a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armoured Ceramite" hidden="false" id="7a05-c9d0-d260-9e66">
+          <infoLinks>
+            <infoLink name="Armoured Ceramite" id="6d82-fc77-ac40-02e1" hidden="false" type="profile" targetId="c688cac8-ae66-21c8-a6e0-f63906a995ea"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf89-454a-933f-a2c9"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Turret" id="f03e-02c0-24a9-8112" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="04a5-5493-e506-9e14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="987e-374a-ddad-a96e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skyreaper Battery" hidden="false" id="a700-ffc2-5a6a-a372" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1a8c-19c2-7f66-0564" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Skyreaper Battery" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="b75b-97c9-ea2e-f134" publicationId="7ab0-ceb9-pubN218282" page="2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 5, Skyfire, Twin-linked, Interceptor</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Command Vox Relay" hidden="false" id="b7de-958b-25c9-1ff3" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d0a3-0a6d-966b-472f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="false" id="f001-871d-0cc3-3a9f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Command Vox Relay" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="928b-ad89-114c-57cd" publicationId="7ab0-ceb9-pubN218958" page="186">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">May add or subtract 1 from all reserve rolls while on the table</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Legacies of Ruin (Tanks)" hidden="false" id="1286-b2c2-39c2-71a2" type="selectionEntryGroup" targetId="9be57471-9796-716e-1145-bd67dedf8425"/>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="f849-9782-05af-183f" type="selectionEntry" targetId="12ab-f49a-fc79-0e30"/>
+        <entryLink import="true" name="Searchlight" hidden="false" id="e762-29c8-c9da-b042" type="selectionEntry" targetId="9a52-7dfa-ebd7-2fb6"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="700"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infernal Relic" id="c34d-fc9e-c9bf-449b" hidden="false" type="rule" targetId="7050b6c0-56e6-f142-9579-83b73560e74c"/>
+        <infoLink name="Assault Vehicle" id="eadd-ddbb-2d26-ce31" hidden="false" type="rule" targetId="8024-df0a-ec75-95c0"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[FW] Chaos Caestus Assault Ram" hidden="false" id="f368-0fc9-1639-a828" collective="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="f1c4-09e2-1971-7362" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="bc9e-9215-6ce2-3870" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Caestus Assault Ram" typeId="3a08-ea03-a598-8615" typeName="Flyer" hidden="false" id="4723-d4ee-f940-269f" publicationId="7ab0-ceb9-pubN170041">
+          <characteristics>
+            <characteristic name="BS" typeId="9878-e3f6-b7b4-7225">4</characteristic>
+            <characteristic name="Front" typeId="3a4e-bc1d-4a12-7176">13</characteristic>
+            <characteristic name="Side" typeId="d12e-7bdb-191c-4849">13</characteristic>
+            <characteristic name="Rear" typeId="a4cb-791a-6a75-4e4a">11</characteristic>
+            <characteristic name="HP" typeId="93e6-d4b1-28a8-944b">3</characteristic>
+            <characteristic name="Type" typeId="eb65-838c-8eaa-8b5d">Vehicle (Flyer, Hover, Tank - When Ramming)</characteristic>
+            <characteristic name="Combat Role" typeId="d477-c087-173f-9f1c">Attack Flyer</characteristic>
+            <characteristic name="Pursuit" typeId="e04d-332e-8b52-0071">5</characteristic>
+            <characteristic name="Agility" typeId="ae34-f5c0-19af-4883">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Caestus Assault Ram (Transport)" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="1cb6-96e1-ac52-34b1" publicationId="7ab0-ceb9-pubN170041">
+          <characteristics>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">10. (Power, Artificer, or Terminator armour only. Not affected by Bulky rule)</characteristic>
+            <characteristic name="Fire Points" typeId="fe20-e124-2c11-86ee">None.</characteristic>
+            <characteristic name="Access Points" typeId="21e5-4518-a31c-7e56">2 Frontal Assault Ramps</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Caestus Ram" id="ee0c-7678-ae91-0552" hidden="false" publicationId="7ab0-ceb9-pubN170041">
+          <description>When conducting a ram attack, the Caestus&apos; player rolls two dice and picks the highest number when determining if it has penetrated the target&apos;s armour and adds +1 to any rolls on the Damage chart that it uses.  In addition, the Caestus has a save of 5+ against any attacks against its front armour, including damage it suffers as a result of ramming or being rammed itself from the front.</description>
+        </rule>
+        <rule name="Misericorde" id="f383-c1b3-174e-c159" hidden="false" publicationId="7ab0-ceb9-pubN170041">
+          <description>The Caesus Assault Ram has a transport capacity of ten models which must either be in Power Armour, Artificer Armour, or Terminator Armour. The transport&apos;s capacity is not affected by the Bulky special rule and remains ten models regardless of the transported model&apos;s type.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Assault Vehicle" id="0e51-c33c-0cd0-4946" hidden="false" targetId="8024-df0a-ec75-95c0" type="rule"/>
+        <infoLink name="Supersonic" id="3816-9404-3e6d-6dd0" hidden="false" targetId="6fc3-10c7-ad0f-4b3a" type="rule"/>
+        <infoLink name="Deep Strike" id="a539-0e4c-ddc4-24a9" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Infernal Relic" id="10ff-3ddb-63da-9f3d" hidden="false" type="rule" targetId="7050b6c0-56e6-f142-9579-83b73560e74c"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin-Linked Magna-Melta" hidden="false" id="fd32-6bee-98d8-33f9" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5876-c3ec-7408-5b75" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c04e-b113-95a4-0292" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Twin-Linked Magna-Melta" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="c1b8-bf05-8e82-0d0a" publicationId="7ab0-ceb9-pubN170041">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Large Blast, Melta, Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="59be-712f-a07a-d97b" hidden="false" targetId="3002-de38-7230-fbc6" type="rule"/>
+            <infoLink name="Melta" id="14d1-14ec-186e-b2f8" hidden="false" targetId="bc4c-234f-0293-98a7" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Firefury Missile Battery" hidden="false" id="7986-ee08-8f62-88d7" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0cb6-8ccd-c413-3c7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="055d-d3f4-287e-2b2c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Firefury Missile Battery" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="190d-d4d2-4b84-512e" publicationId="7ab0-ceb9-pubN170041">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4, Blast, Twin-Linked, One Use</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="1464-c1d8-4a20-e378" hidden="false" targetId="3002-de38-7230-fbc6" type="rule"/>
+            <infoLink name="One Use Only/One Shot Only" id="b860-fed8-fcb8-42da" hidden="false" targetId="3789-00ab-3f47-eb36" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ceramite Plating" hidden="false" id="5ea2-1ab4-ea1e-4a9d" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2587-eecc-ea85-0ddf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ceramite Plating" id="4f7d-e59d-ab5b-831a" hidden="false" targetId="1539-f30a-c51f-b66f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frag Assault Launchers" hidden="false" id="5b5f-248e-7d79-8c1f" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="69d2-6674-b237-9ceb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Frag Assault Launchers" id="2dbb-5ed2-7fea-4439" hidden="false" targetId="df5936c5-d5e0-a3dc-0887-0924a725312f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Teleport homer" hidden="false" id="8240-570b-3839-f1de" collective="false" targetId="630d-4a08-7a68-7eee" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="15" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7ffb-61c6-df04-26c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Legacies of Ruin (Tanks)" hidden="false" id="b6f6-da94-bc98-c210" type="selectionEntryGroup" targetId="9be57471-9796-716e-1145-bd67dedf8425"/>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="7a16-aedf-c5ee-e321" type="selectionEntry" targetId="6709-b0a4-d809-8602">
+          <modifiers>
+            <modifier type="set" value="0" field="costs"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="275"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="14af-4018-ae90-37e3" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Teleport homer" hidden="false" id="630d-4a08-7a68-7eee" collective="false">
+      <infoLinks>
+        <infoLink name="Teleport homer" id="10e2-2ee2-dc6e-0705" hidden="false" targetId="27c6-7307-abbe-e3b0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7bda-7c33-ecff-a43a" name="Chaos Artefact Weapons" hidden="false" collective="false" import="true">
@@ -27636,6 +27967,11 @@ Codex: Grey Knights</description>
     <profile name="Armatus Necrotechnica" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="2f77-50c0-91a7-bff6">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">One vehicle with the Tank type in an army may be upgraded to use the Armatus Necotechnica for 50pts. Whenever a unit (friendly or enemy) within 6&quot; of a vehicle with this upgrade loses a model as a casualty, roll a D6. On a 6, the vehicle regains 1 Hull Point. This may not bring it above the number of Hull Points listed on its army list entry. In addition, any unit (friendly or enemy) within 6&quot; of an Armatus Necrotechnica must reduce its Leadership value by -1. Units with the Stubborn special rule may not ignore this modifier.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Teleport homer" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="27c6-7307-abbe-e3b0">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Friendly unit composed entirely of models in Terminator armour do not scatter when they Deep Strike, so long as the first model is placed within 6&quot; of the teleport homer&apos;s bearer. For this to work, the bearer of the teleport homer must have been on the battlefield at the start of the turn.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
