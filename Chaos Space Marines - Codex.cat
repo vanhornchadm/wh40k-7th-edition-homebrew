@@ -26194,7 +26194,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="987e-374a-ddad-a96e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Skyreaper Battery" hidden="false" id="a700-ffc2-5a6a-a372" page="0" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Skyreaper Battery" hidden="false" id="a700-ffc2-5a6a-a372" page="0" collective="false" sortIndex="0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1a8c-19c2-7f66-0564" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
