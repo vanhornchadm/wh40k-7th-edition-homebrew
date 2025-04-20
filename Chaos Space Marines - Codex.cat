@@ -26124,7 +26124,9 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9ded-5cdb-57f9-eba4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <rules>
-            <rule name="Command Tank" id="a05b-73b0-79a8-6650" hidden="false" publicationId="7ab0-ceb9-pubN218573" page="6"/>
+            <rule name="Command Tank" id="a05b-73b0-79a8-6650" hidden="false" publicationId="7ab0-ceb9-pubN218573" page="6">
+              <description>A Super-heavy vehicle with this special rule is a High Command Formation as well as a Super-heavy vehicle, and counts as a HQ choice.</description>
+            </rule>
           </rules>
           <costs>
             <cost name="pts" typeId="points" value="20"/>
