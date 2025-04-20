@@ -2021,6 +2021,11 @@ D6 Result
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="098e-04f2-93a2-d74c" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="[FW] Chaos Relic Whirlwind Scorpius" hidden="false" id="11bb-18d5-837b-5cd7" type="selectionEntry" targetId="1500-8f30-b798-778b">
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="4baa-db59-7507-bc1a" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="70e4-4d8f-b97f-3aaa" name="[FW] Arkos the Faithless (IA: Vraks)" publicationId="5af86795--pubN75167" page="153" hidden="true" collective="false" import="true" type="upgrade">
@@ -26385,6 +26390,71 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
       <costs>
         <cost name="pts" typeId="points" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[FW] Chaos Relic Whirlwind Scorpius" hidden="false" id="1500-8f30-b798-778b" collective="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="bc9e-9215-6ce2-3870" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="f926-fdb3-0766-b9b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Whirlwind Scorpius" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="dc3b-16e9-bac1-6f71" publicationId="7ab0-ceb9-pubN169253">
+          <characteristics>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Tank)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Infernal Relic" id="8a36-f703-2b69-843e" hidden="false" type="rule" targetId="7050b6c0-56e6-f142-9579-83b73560e74c"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scorpius Multi-launcher" hidden="false" id="2d17-6691-59fe-7312" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="44b6-b46f-0b43-bfca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="799a-2878-8af6-75eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scorpius Multi-launcher" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9727-2320-2249-5a2d" publicationId="7ab0-ceb9-pubN169253">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Barrage, Blast, Rocket Barrage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Rocket Barrage" id="b6c8-0c4e-5af4-0763" hidden="false" publicationId="7ab0-ceb9-pubN169253">
+              <description>In a turn in which the vehicle has not moved, the Multi-launcher&apos;s rate of fire is increased to Heavy 1+D3</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Searchlight" hidden="false" id="7322-7be0-e16e-d5a9" type="selectionEntry" targetId="9a52-7dfa-ebd7-2fb6"/>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="a958-709e-90ee-ff69" type="selectionEntry" targetId="12ab-f49a-fc79-0e30"/>
+        <entryLink import="true" name="Legacies of Ruin (Tanks)" hidden="false" id="f51b-84f4-01c6-9484" type="selectionEntryGroup" targetId="9be57471-9796-716e-1145-bd67dedf8425"/>
+        <entryLink import="true" name="Chaos Vehicle Upgrades" hidden="false" id="e697-2df6-6740-18d4" type="selectionEntryGroup" targetId="767879b7-ee12-d3c5-5523-498a308a5850"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="b5cc-bfa5-99b8-f790" primary="true" name="Heavy Support"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
