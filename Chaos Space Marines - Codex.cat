@@ -26181,6 +26181,7 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf89-454a-933f-a2c9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fdf-fca0-8635-433c"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
