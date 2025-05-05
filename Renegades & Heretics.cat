@@ -11829,7 +11829,7 @@
                 </conditionGroup>
               </conditionGroups>
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="863c-a83a-17a7-a171" shared="true" includeChildSelections="true"/>
+                <condition type="notEqualTo" value="0" field="selections" scope="force" childId="863c-a83a-17a7-a171" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
