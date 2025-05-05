@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca4c-9142-d515-0745" name="Renegades &amp; Heretics: IA13 / IA:SoV" revision="2016" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="ca4c-9142-d515-0745" name="Renegades &amp; Heretics: IA13 / IA:SoV" revision="2017" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="ca4c-9142-pubN70953" name="Shield of Baal: Leviathan"/>
     <publication id="ca4c-9142-pubN71990" name="Imperial Armour 13"/>
@@ -11819,10 +11819,17 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="a5d6-57e4-cb0e-0bd6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a04d-1cf1-dde9-86ba" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-57e4-cb0e-0bd6" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a04d-1cf1-dde9-86ba" type="equalTo"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="863c-a83a-17a7-a171" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
