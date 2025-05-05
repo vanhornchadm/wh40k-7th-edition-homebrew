@@ -634,7 +634,7 @@
         <categoryLink name="No Force Org Slot" hidden="false" id="fdd0-bf14-fefe-f3c8" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
         <categoryLink name="HQ" hidden="false" id="2d91-00cd-6b9d-0413" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2a58-50d9-48cc-2ca9" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="2a58-50d9-48cc-2ca9" includeChildSelections="true" includeChildForces="true"/>
             <constraint type="max" value="25" field="limit::points" scope="roster" shared="false" id="2f08-05be-fa3a-68c2" percentValue="true" includeChildForces="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
@@ -657,13 +657,6 @@
         <categoryLink name="Lord of War" hidden="false" id="1715-03a0-8f1f-c615" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
         <categoryLink name="Legendary Unit" hidden="false" id="aca5-9f17-064d-9ac2" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden" scope="force">
-          <conditions>
-            <condition type="instanceOf" value="1" field="forces" scope="ca4c-9142-d515-0745" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </forceEntry>
   </forceEntries>
   <entryLinks>
