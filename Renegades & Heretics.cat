@@ -15716,9 +15716,14 @@
     <selectionEntry id="fe3f-2c14-eb63-b50f" name="Renegade Command Squad" publicationId="ca4c-9142-pubN73886" page="240" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="ba11-e6a5-3624-a876" value="0">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f2e8929-f85e-c9f2-a8eb-a3fd45353c1d" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9f2e8929-f85e-c9f2-a8eb-a3fd45353c1d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="forces" scope="44f2-e9c6-f689-2057" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
