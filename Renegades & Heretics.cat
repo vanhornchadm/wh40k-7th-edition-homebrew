@@ -15720,7 +15720,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="9f2e8929-f85e-c9f2-a8eb-a3fd45353c1d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="forces" scope="44f2-e9c6-f689-2057" childId="any" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="44f2-e9c6-f689-2057" childId="any" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
