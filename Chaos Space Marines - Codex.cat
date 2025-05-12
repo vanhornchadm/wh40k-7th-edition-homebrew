@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2030" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2031" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5af86795--pubN75167" name="IA Vraks 2015"/>
     <publication id="5af86795--pubN75711" name="Imperial Armour 13"/>
@@ -2029,6 +2029,11 @@ D6 Result
     <entryLink import="true" name="Gal Vorbak Dark Brethren" hidden="false" id="2b65-9b45-394e-9dbb" type="selectionEntry" targetId="59e98276-476f-0169-0950-56b0dd13b937">
       <categoryLinks>
         <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="653b-b14d-6d47-025e" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="[FW] Chaos Arquitor Bombard" hidden="false" id="53ed-c261-4b02-5fc8" type="selectionEntry" targetId="2347-4b44-1d4a-8992">
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="53b1-92e5-cc04-fad0" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -25950,24 +25955,6 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Psyarkana" id="bd05-8b16-55f4-b688" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b68-debb-9c79-3526" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Armatus Necrotechnica" hidden="false" id="9a94-b6ce-cba9-fb38">
-                  <costs>
-                    <cost name="pts" typeId="points" value="50"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Armatus Necrotechnica" id="ac7a-e1ec-d882-aee3" hidden="false" type="profile" targetId="2f77-50c0-91a7-bff6"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="62e4-b1a3-f359-5cb2" includeChildSelections="true"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
             <selectionEntryGroup name="May take one of the following Pintle-Mounted Weapons" id="e82e-43a9-4088-2814" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7830-376f-108d-2ac6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -26752,6 +26739,196 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[FW] Chaos Arquitor Bombard" hidden="false" id="2347-4b44-1d4a-8992" publicationId="ca571888--pubN106705" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="caf5-714c-6faf-3ea0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="d2a3-c53a-9632-26db" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Chaos Arquitor Bombard" hidden="false" id="c8de-b434-9d7a-3f90" publicationId="ca571888--pubN106705" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5319-4b9d-7fbb-1a2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6b91-0e62-46a1-c4d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Chaos Arquitor Bombard" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="59ac-3721-7fa4-0961" publicationId="ca571888--pubN106705">
+              <characteristics>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+                <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+                <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+                <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">4</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehicle (Tank), Heavy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="7d5d-183e-a1de-16a6" primary="true" name="Heavy Support"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange its two sponson-mounted Heavy Bolters for two:" id="e288-ad87-9901-81e3" hidden="false" collective="false" import="true" defaultSelectionEntryId="0646-6443-9deb-d3ab">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc9-f104-4749-4cb9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="168a-934c-eccb-0467" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="ce71-92d2-faf3-5332">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Autocannon" id="3ddc-f68d-fd56-0c50" hidden="false" type="profile" targetId="fa99-0671-b31a-22d7"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="395b-5108-0fb7-c0ac">
+                      <infoLinks>
+                        <infoLink name="Heavy Bolter" id="7eed-82d9-a3d2-431b" hidden="false" type="profile" targetId="e2b0-b9f1-6c38-584c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Main Weapon" id="0c18-4f9e-c997-f379" hidden="false" collective="false" import="true" defaultSelectionEntryId="766b-2151-a4cf-4a03">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1d4-ed73-e99a-48cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a474-4314-d757-31ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull-mounted Graviton-charge Cannon" hidden="false" id="5d73-8850-cc68-f9f5" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a7a-47e4-9f18-411d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hull-mounted Graviton-charge Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a3cf-f549-b9d5-20b0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">*</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, Large Blast (5&quot;), Concussive, Graviton Pulse, Haywire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Haywire" id="113a-5b18-1756-d7a4" hidden="false" targetId="719f-69cb-c032-d0ef" type="rule"/>
+                    <infoLink name="Concussive" id="aa19-d86f-437c-e0a7" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule"/>
+                    <infoLink name="Graviton Pulse" id="0f4b-9c10-5e28-a57d" hidden="false" targetId="80cb-ca15-63ec-3a5b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull-mounted Spicula Rocket System" hidden="false" id="4d27-cd1b-70f0-2d0c" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a00a-461d-648e-3fe6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Spicula rocket system (1)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="4b96-3217-a6e7-b563" publicationId="ca571888--pubN106705">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 5 (per unit hit)*, Large Blast (5&quot;), Rocket Salvo, Sunder, Wrecker</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Spicula rocket system (2)" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="8be2-5be2-5b8e-db36" publicationId="ca571888--pubN106705">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance D6+4 (per unit hit)*, Large Blast (7&quot;), Rocket Salvo, Sunder, Wrecker</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Rocket Salvo*" id="9927-dfc3-9714-7edd" hidden="false" publicationId="ca571888--pubN106705">
+                      <description>When firing the Spicula rocket system choose a target point within range (note that the target point does not have to be on a model’s base) and place a Blast template of one of the following sizes: 5&quot; or 7&quot;. Once placed scatter the Blast template as normal. Each unit under the template’s final position suffers a number of hits based on the template size as shown on the table below. If the 7&quot; template is used and a ‘6’ is rolled on the D6 then the weapon has exhausted its ammunition and may no longer be fired.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Sunder" id="96d8-32ad-4354-63c9" hidden="false" targetId="f17f-0784-733e-fd7c" type="rule"/>
+                    <infoLink name="Wrecker" id="f350-6065-78b5-a925" hidden="false" targetId="fbf2-7865-d171-8cdc" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull-Mounted Morbus Heavy Bombard" hidden="false" id="766b-2151-a4cf-4a03" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aa1-8227-c2ec-6195" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Morbus Heavy Bombard - Explosive Shells" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3c4e-aa15-014a-4b82">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">2</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, Large Blast (5&quot;), Fleshbane, Ignores Cover, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Morbus Heavy Bombard - Carcass Shells" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a0a7-b679-1a3a-cf04">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" id="0e4a-2741-3a2c-d763" hidden="false" targetId="52f9-9dcb-b6ed-0562" type="rule"/>
+                    <infoLink name="Fleshbane" id="949b-7f71-945b-8461" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
+                    <infoLink name="Pinning" id="551b-c10f-08ea-ec89" hidden="false" targetId="8918-d7ce-5edb-3b70" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Searchlight" hidden="false" id="906b-b639-7acd-e755" collective="false" targetId="9a52-7dfa-ebd7-2fb6" type="selectionEntry"/>
+            <entryLink import="true" name="Smoke Launchers" hidden="false" id="7547-2080-848a-847e" type="selectionEntry" targetId="12ab-f49a-fc79-0e30"/>
+            <entryLink import="true" name="Chaos Vehicle Upgrades" hidden="false" id="5fd6-6b7e-ed50-0bea" type="selectionEntryGroup" targetId="767879b7-ee12-d3c5-5523-498a308a5850"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="140"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Auxiliary Drive" hidden="false" id="0f62-314a-b156-219d">
+              <infoLinks>
+                <infoLink name="Auxiliary Drive" id="f5e8-db96-610d-6117" hidden="false" type="profile" targetId="a6e7-a77c-bb50-8198"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b695-d6b3-688a-6df3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa5-b4fd-ddf7-3391"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armoured Ceramite" hidden="false" id="592b-1c75-002c-c693">
+              <infoLinks>
+                <infoLink name="Armoured Ceramite" id="dc1b-9361-f8e3-65b4" hidden="false" type="profile" targetId="c688cac8-ae66-21c8-a6e0-f63906a995ea"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08ea-b143-7f1d-6447"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -27725,6 +27902,9 @@ Codex: Grey Knights</description>
     </rule>
     <rule name="Shock Pulse" id="7b3c-bb0c-be50-dd18" hidden="false">
       <description>Any vehicle, including super-heavies, that suffers a penetrating hit may only fire snap shots on the following game turn.</description>
+    </rule>
+    <rule name="Graviton Pulse" id="80cb-ca15-63ec-3a5b" hidden="false">
+      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of a ‘6’ always counts as a failure). After a Graviton Pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
