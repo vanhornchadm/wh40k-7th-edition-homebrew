@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2006" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0701-88e9-a200-0455" name="Chaos Renegade Knights" revision="2007" battleScribeVersion="2.03" authorName="BSData Developers" library="false" gameSystemId="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lord of War" hidden="false"/>
   </categoryEntries>
@@ -999,7 +999,7 @@
       <description>This weapon makes a single bonus attack at Initiative step 1 in addition to the model’s normal attacks (even with Unwieldy). This does not benefit from Smash or any other special melee weapons.</description>
     </rule>
     <rule name="Electrostatic Discharge" id="7d7f-bf86-2c7e-1d4a" hidden="false">
-      <description>At the start of the Assault phase, before Initiative steps are resolved, nominate a single enemy unit in base contact. That unit suffers D3 automatic hits at Strength 6, AP–.</description>
+      <description>When a model equipped with a weapon with this special rule makes its close combat attacks, roll twice as many dice as indicated by its Attack characteristic. In addition, each To Hit roll of 6 generates two additional automatic hits against the target. These additional hits do not generate further hits and this rule has no effect when the equipped model is making Snap Shots.</description>
     </rule>
     <rule name="Deflagrate" id="9065-911e-d591-1703" hidden="false">
       <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately Resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits.</description>
@@ -1121,7 +1121,7 @@
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
-        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Shred, Electrostatic Discharge</characteristic>
       </characteristics>
     </profile>
