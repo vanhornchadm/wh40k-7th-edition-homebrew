@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" name="DanMod" revision="6" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="d8d0ffea-97d0-4b35-bfdb-fe37be41323c" name="DanMod" revision="7" battleScribeVersion="2.03" authorName="Chad Van Horn" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e1ebd931--pubN66380" name="BRB"/>
     <publication id="e1ebd931--pubN67328" name="Kill Team Dataslate"/>
@@ -655,6 +655,11 @@
             </modifier>
             <modifier type="decrement" value="1" field="3f1a-7c08-91b4-2d6e">
               <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="c888f08a-6cea-4a01-8126-d374a9231554" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="3f1a-7c08-91b4-2d6e">
+              <repeats>
                 <repeat field="selections" scope="parent" value="1" repeats="1" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </repeats>
             </modifier>
@@ -689,6 +694,11 @@
             </modifier>
             <modifier type="decrement" value="1" field="5c22-b9d1-40ae-8f73">
               <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="c888f08a-6cea-4a01-8126-d374a9231554" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="5c22-b9d1-40ae-8f73">
+              <repeats>
                 <repeat field="selections" scope="parent" value="1" repeats="1" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </repeats>
             </modifier>
@@ -706,13 +716,45 @@
             </modifier>
             <modifier type="decrement" value="1" field="7a94-e305-c6d2-1b58">
               <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="c888f08a-6cea-4a01-8126-d374a9231554" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="7a94-e305-c6d2-1b58">
+              <repeats>
                 <repeat field="selections" scope="parent" value="1" repeats="1" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Fortification" hidden="false" id="8311-ff68-5163-7d4f" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a"/>
-        <categoryLink name="Lord of War" hidden="false" id="1715-03a0-8f1f-c615" targetId="c888f08a-6cea-4a01-8126-d374a9231554"/>
+        <categoryLink name="Lord of War" hidden="false" id="1715-03a0-8f1f-c615" targetId="c888f08a-6cea-4a01-8126-d374a9231554">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="9b61-4af7-2e85-c03d" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="4d78-16bc-e9f0-5a21" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="9b61-4af7-2e85-c03d">
+              <repeats>
+                <repeat value="3000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="4d78-16bc-e9f0-5a21">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="4d78-16bc-e9f0-5a21">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="c274d0b0-5866-44bc-9810-91c136ae7438" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="4d78-16bc-e9f0-5a21">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1" repeats="1" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Legendary Unit" hidden="false" id="aca5-9f17-064d-9ac2" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606"/>
       </categoryLinks>
     </forceEntry>
